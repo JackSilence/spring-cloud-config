@@ -7,10 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JackSilence/
-          search-paths: config-repo
-          username: #記得要設定
-          password: #記得要設定
+          uri: https://github.com/JackSilence/config-repo
+          username: #Public不用設定
+          password: #Public不用設定
 eureka:
   client:
     service-url:
