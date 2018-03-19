@@ -1,0 +1,17 @@
+server:
+  port: 8768
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JackSilence/
+          search-paths: config-repo
+          username: #記得要設定
+          password: #記得要設定
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
